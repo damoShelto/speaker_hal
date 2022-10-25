@@ -93,9 +93,6 @@ _spkOff(loudTone);
 void speaker_hal::_spkOff(bool loud_pin){
 
 
-Serial.printf("logic on: 0x%02X\r\n", _logicOn);
-Serial.printf("logic off: 0x%02X\r\n", (uint8_t *) ~_logicOn);
-
 
 //if the loud pin exists
 if((loud_pin==1) && (_pinLoud != -1))
